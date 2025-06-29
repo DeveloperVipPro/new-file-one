@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   background-color: #000;
   border: 2px solid #FFF;
   backdrop-filter: blur(20px);
@@ -47,6 +47,7 @@ body {
   margin-left: auto;
   z-index: 999;
 }
+
 
 .menu li a:not(.profile) {
   text-decoration: none;
@@ -108,60 +109,10 @@ body {
 }
 /* Responsive Web */
 
-@media (min-width: 768px) and (max-width: 1023px) {
- 
-
-  .menu li a:not(.profile):hover {
-    border:none;
-  }
-
-  .menu li a {
-    position: relative;
-    text-decoration: none;
-    
-    
-    
-  }
-
-  .menu li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background: #00FFFF;
-    transition: width 0.3s ease-in-out;
-  }
-
-  .menu li a:hover::after {
-    width: 100%;
-  }
 
 
 
-  .profile a{
-    border:none;
-  }
-  .profile a:hover{
-    border:none;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  .menu li:nth-child(5) {
-    order: initial;
-  }
-
-  .Socials {
-    display: none;
-  }
-}
-
-
-@media (max-width: 767px) {
+@media (max-width: 1023px)  {
   .menu {
     display: flex;
     flex-direction: column;
