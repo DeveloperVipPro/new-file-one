@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Chủ</title>
+
+  <!-- CSS chính -->
+  <link rel="stylesheet" href="Home.css" />
+
+  <!-- Font Awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Phần Header + Navigation -->
+  <header>
+    <nav class="navbar">
+      
+      <!-- Logo -->
+      <div class="logo">
+        <a href="Home.html">Hyper Team</a>
+      </div>
+
+      <!-- Nút menu khi trên mobile -->
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Danh sách menu chính -->
+      <ul class="menu" id="menu">
+        <li><a href="Home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="Trading.html"><i class="fa-solid fa-comments-dollar"></i> Trading</a></li>
+        <li><a href="Coin.html"><i class="fa-solid fa-coins"></i> Coin</a></li>
+        <li><a href="Communication.html"><i class="fa-solid fa-comment"></i> Communication</a></li>
+
+        <!-- Tài khoản -->
+        <li class="profile">
+          <a href="#"><i class="fa-regular fa-circle-user"></i> Account</a>
+        </li>
+
+        <!-- Mạng xã hội -->
+        <li class="Socials">
+          <p style="color:#fff;">Contact to Hyper Team:</p> 
+          <a href="#" id="Youtube"><i class="fa-brands fa-youtube"></i> Youtube</a>
+          <a href="#" id="Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="#" id="Tiktok"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+          <a href="#" id="Telegram"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- Script xử lý menu Trên điện thoại-->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
